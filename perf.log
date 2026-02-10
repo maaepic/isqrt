@@ -1,0 +1,126 @@
+Rust
+
+ Performance counter stats for './isqrt-rs':
+
+            169,87 msec task-clock                       #    0,997 CPUs utilized             
+                 3      context-switches                 #   17,661 /sec                      
+                 2      cpu-migrations                   #   11,774 /sec                      
+                77      page-faults                      #  453,287 /sec                      
+       842 574 350      cycles                           #    4,960 GHz                       
+         1 574 306      stalled-cycles-frontend          #    0,19% frontend cycles idle      
+       803 356 611      instructions                     #    0,95  insn per cycle            
+                                                  #    0,00  stalled cycles per insn   
+       100 587 197      branches                         #  592,141 M/sec                     
+            15 810      branch-misses                    #    0,02% of all branches           
+
+       0,170322381 seconds time elapsed
+
+       0,169317000 seconds user
+       0,001001000 seconds sys
+
+
+Gcc
+
+ Performance counter stats for './isqrt-gcc':
+
+             55,39 msec task-clock                       #    0,994 CPUs utilized             
+                 6      context-switches                 #  108,314 /sec                      
+                 5      cpu-migrations                   #   90,261 /sec                      
+                56      page-faults                      #    1,011 K/sec                     
+       261 512 241      cycles                           #    4,721 GHz                       
+           728 417      stalled-cycles-frontend          #    0,28% frontend cycles idle      
+     1 501 618 130      instructions                     #    5,74  insn per cycle            
+                                                  #    0,00  stalled cycles per insn   
+       100 283 433      branches                         #    1,810 G/sec                     
+             8 859      branch-misses                    #    0,01% of all branches           
+
+       0,055748088 seconds time elapsed
+
+       0,055652000 seconds user
+       0,000000000 seconds sys
+
+
+CLang
+
+ Performance counter stats for './isqrt-clang':
+
+             57,21 msec task-clock                       #    0,994 CPUs utilized             
+                 6      context-switches                 #  104,868 /sec                      
+                 6      cpu-migrations                   #  104,868 /sec                      
+                66      page-faults                      #    1,154 K/sec                     
+       269 941 192      cycles                           #    4,718 GHz                       
+           840 658      stalled-cycles-frontend          #    0,31% frontend cycles idle      
+     1 301 780 676      instructions                     #    4,82  insn per cycle            
+                                                  #    0,00  stalled cycles per insn   
+       100 314 781      branches                         #    1,753 G/sec                     
+             9 900      branch-misses                    #    0,01% of all branches           
+
+       0,057569016 seconds time elapsed
+
+       0,055495000 seconds user
+       0,001981000 seconds sys
+
+
+SSE
+
+ Performance counter stats for './sse-isqrt':
+
+             41,11 msec task-clock                       #    0,994 CPUs utilized             
+                 2      context-switches                 #   48,650 /sec                      
+                 1      cpu-migrations                   #   24,325 /sec                      
+                56      page-faults                      #    1,362 K/sec                     
+       202 577 821      cycles                           #    4,928 GHz                       
+           879 499      stalled-cycles-frontend          #    0,43% frontend cycles idle      
+     1 001 356 685      instructions                     #    4,94  insn per cycle            
+                                                  #    0,00  stalled cycles per insn   
+       100 238 787      branches                         #    2,438 G/sec                     
+             7 729      branch-misses                    #    0,01% of all branches           
+
+       0,041353144 seconds time elapsed
+
+       0,040360000 seconds user
+       0,000984000 seconds sys
+
+
+Fast
+
+ Performance counter stats for './fast-isqrt':
+
+            119,18 msec task-clock                       #    0,997 CPUs utilized             
+                 1      context-switches                 #    8,391 /sec                      
+                 1      cpu-migrations                   #    8,391 /sec                      
+                47      page-faults                      #  394,357 /sec                      
+       601 396 220      cycles                           #    5,046 GHz                       
+           891 861      stalled-cycles-frontend          #    0,15% frontend cycles idle      
+     2 302 279 231      instructions                     #    3,83  insn per cycle            
+                                                  #    0,00  stalled cycles per insn   
+       100 394 734      branches                         #  842,369 M/sec                     
+             8 495      branch-misses                    #    0,01% of all branches           
+
+       0,119481937 seconds time elapsed
+
+       0,118468000 seconds user
+       0,000995000 seconds sys
+
+
+Slow
+
+ Performance counter stats for './slow-isqrt':
+
+            324,10 msec task-clock                       #    0,999 CPUs utilized             
+                 3      context-switches                 #    9,256 /sec                      
+                 0      cpu-migrations                   #    0,000 /sec                      
+                45      page-faults                      #  138,845 /sec                      
+     1 638 050 827      cycles                           #    5,054 GHz                       
+         1 950 461      stalled-cycles-frontend          #    0,12% frontend cycles idle      
+     1 004 441 542      instructions                     #    0,61  insn per cycle            
+                                                  #    0,00  stalled cycles per insn   
+       100 761 644      branches                         #  310,894 M/sec                     
+            11 644      branch-misses                    #    0,01% of all branches           
+
+       0,324374409 seconds time elapsed
+
+       0,322331000 seconds user
+       0,001995000 seconds sys
+
+
